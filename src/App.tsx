@@ -1,5 +1,17 @@
-function App() {
-    return <h1>Hello World</h1>;
+interface MeuBotaoProps {
+    texto: string
 }
 
-export default App;
+function MeuBotao(props: MeuBotaoProps){
+    return <button className="button">{props.texto}</button>
+}
+
+export function App() {
+    return (
+        <div>
+            <MeuBotao texto= "Clique aqui" />
+            <MeuBotao texto= "Botão 3" />
+            <MeuBotao texto= "Botão 2" />
+        </div>
+    )
+}
