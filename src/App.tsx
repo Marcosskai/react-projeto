@@ -3,7 +3,7 @@ interface MeuBotaoProps {
 }
 
 function MeuBotao(props: MeuBotaoProps){
-    return <button className="bg-orange-400 h-10 px-3 rounded">{props.texto}</button>
+    return <button className="bg-orange-400 h-10 px-3 rounded font-medium">{props.texto}</button>
 }
 
 export function App() {
