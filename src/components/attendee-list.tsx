@@ -29,21 +29,25 @@ export function AttendeeList() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className='border-b border-white/10'>
+                    {Array.from({length: 10}).map(()=> {
+                    return(
+                     <tr className='border-b border-white/10'>
                         <td className='py-3 px-4 text-sm text-zinc-300'>
                             <input type="checkbox" />
-                        </td>
+                         </td>
                         <td className='py-3 px-4 text-sm text-zinc-300'>123456</td>
-                        <td className='py-3 px-4 text-sm text-zinc-300'>
+                         <td className='py-3 px-4 text-sm text-zinc-300'>
                             <div className='flex flex-col gap-1'>
                                 <span className='font-semibold text-white'>Diego Marcos</span>
                                 <span>diego@gmail.com.com</span>
                             </div>
-                        </td>
-                        <td className='py-3 px-4 text-sm text-zinc-300'>7 dias atrás</td>
-                        <td className='py-3 px-4 text-sm text-zinc-300'>3 dias atrás</td>
-                        <td className='py-3 px-4 text-sm text-zinc-300'></td>
-                    </tr>
+                         </td>
+                         <td className='py-3 px-4 text-sm text-zinc-300'>7 dias atrás</td>
+                         <td className='py-3 px-4 text-sm text-zinc-300'>3 dias atrás</td>
+                         <td className='py-3 px-4 text-sm text-zinc-300'></td>
+                     </tr>
+                        )
+                    })}
                 </tbody>
                 <tfoot>
                     <tr>
