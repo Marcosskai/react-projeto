@@ -2,7 +2,7 @@ import { UserSearch } from 'lucide-react';
 
 export function AttendeeList() {
     return (
-        <div>
+        <div className='flex flex-col gap-4'>
             <div className="flex gap-3 items-center">
                 <h1 className="text-2xl font-bold">Participantes</h1>
                 <div className="px-3 w-72 py-1.5 border border-white/10 rounded-lg text-sm flex items-center gap-3">
@@ -14,43 +14,45 @@ export function AttendeeList() {
                 </div>
             </div>
 
-            <table>
+            <div className='border border-white/10 rounded-lg'> 
+            <table className='w-full'>
                 <thead>
-                    <tr>
-                        <th>
+                    <tr className='border-b border-white/10'>
+                        <th className='py-3 px-4 text-sm font-semibold text-left'>
                             <input type="checkbox" />
                         </th>
-                        <th>Código</th>
-                        <th>Participantes</th>
-                        <th>Data de Inscrição</th>
-                        <th>Data do check-in</th>
-                        <th></th>
+                        <th className='py-3 px-4 text-sm font-semibold text-left'>Código</th>
+                        <th className='py-3 px-4 text-sm font-semibold text-left'>Participantes</th>
+                        <th className='py-3 px-4 text-sm font-semibold text-left'>Data de Inscrição</th>
+                        <th className='py-3 px-4 text-sm font-semibold text-left'>Data do check-in</th>
+                        <th className='py-3 px-4 text-sm font-semibold text-left'></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
+                    <tr className='border-b border-white/10'>
+                        <td className='py-3 px-4 text-sm text-zinc-300'>
                             <input type="checkbox" />
                         </td>
-                        <td>123456</td>
-                        <td>
-                            <div>
-                                <span>Diego Marcos</span>
+                        <td className='py-3 px-4 text-sm text-zinc-300'>123456</td>
+                        <td className='py-3 px-4 text-sm text-zinc-300'>
+                            <div className='flex flex-col gap-1'>
+                                <span className='font-semibold text-white'>Diego Marcos</span>
                                 <span>diego@gmail.com.com</span>
                             </div>
                         </td>
-                        <td>7 dias atrás</td>
-                        <td>3 dias atrás</td>
-                        <td></td>
+                        <td className='py-3 px-4 text-sm text-zinc-300'>7 dias atrás</td>
+                        <td className='py-3 px-4 text-sm text-zinc-300'>3 dias atrás</td>
+                        <td className='py-3 px-4 text-sm text-zinc-300'></td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colSpan={3}>Mostrando 10 de 228 itens</td>
-                        <td colSpan={3}>Página 1 de 23</td>
+                        <td className='py-3 px-4 text-sm text-zinc-300' colSpan={3}>Mostrando 10 de 228 itens</td>
+                        <td className='py-3 px-4 text-sm text-zinc-300 text-right' colSpan={3}>Página 1 de 23</td>
                     </tr>
                 </tfoot>
             </table>
+            </div>
         </div>
-    );
+    )
 }
