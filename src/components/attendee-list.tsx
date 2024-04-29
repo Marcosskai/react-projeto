@@ -50,9 +50,8 @@ export function AttendeeList() {
           <tbody>
              {Array.from({ length: 9 }).map((_, i) => {
                     return (
-                        <tr
-                            key={i}
-                            className="border-b border-white/10">
+                        <tr key={i} className="border-b border-white/10 hover: bg-white/5">
+                            
                         <td className="py-3 px-4 text-sm text-zinc-300">
                     <input type="checkbox" className='size-4 bg-black/20 rounded'/>
                        </td>
