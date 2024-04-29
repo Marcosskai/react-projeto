@@ -15,19 +15,19 @@ export function AttendeeList() {
                 <div className="px-3 w-72 py-1.5 border border-white/10 rounded-lg text-sm flex items-center gap-3">
                     <UserSearch className="size-4 text-emerald-300" />
                     <input
-                        className="bg-transparent flex-1 outline-none"
+                        className="bg-transparent flex-1 outline-none h-auto border-0 p-0 text-sm"
                         placeholder="Buscar Participante..."/>
-        </div>
          </div>
+          </div>
 
-          <div className="border border-white/10 rounded-lg">
+           <div className="border border-white/10 rounded-lg">
             <table className="w-full">
                 <thead>
                     <tr className="border-b border-white/10">
                         <th
                             style={{ width: 48 }}
                             className="py-3 px-4 text-sm font-semibold text-left">
-                                <input type="checkbox" />
+                                <input type="checkbox" className='size-4 bg-black/20 rounded'/>
                         </th>
                         < th className="py-3 px-4 text-sm font-semibold text-left">
                                 Código
@@ -54,7 +54,7 @@ export function AttendeeList() {
                             key={i}
                             className="border-b border-white/10">
                         <td className="py-3 px-4 text-sm text-zinc-300">
-                    <input type="checkbox" />
+                    <input type="checkbox" className='size-4 bg-black/20 rounded'/>
                        </td>
                         <td className="py-3 px-4 text-sm text-zinc-300">
                                         123456
